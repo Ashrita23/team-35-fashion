@@ -1,0 +1,46 @@
++    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title>edvertrends</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="manoj.css">
+      </head>
+      <body>
+        <div>
+          <a href="home.html">Home</a>
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+          <a href="contact.html">contact</a>
+          <marquee behavior="center" direction="center"></marquee>
+
+        </div>
+        <div class="product-card">
+          <h1>Best Shoes</h1>
+          <p>Lorem ipsum, or lipsum as it is sometimes known</p>
+          <div class="product-pic"></div>
+          <div class="product-colors">
+            <img class="mySlides" src="">
+<img  class="mySlides" src="WhatsApp Image 2022-10-30 at 4.02.38 AM (1).jpeg">
+<img class="mySlides" src="WhatsApp Image 2022-10-30 at 4.02.36 AM.jpeg">
+<img class="mySlides" src="WhatsApp Image 2022-10-30 at 4.02.38 AM (1).jpeg">
+          </div>
+          <div class="product info">festivel sale
+            <div class="product-price">$90</div>
+            <a href="manoj.css" class="product-button">Add to Cart</a>
+          </div>
+        </div>
+     
+        <script>
+          $(".product-colors span").click(function(){
+            $(".product-colors span").removeClass("active");
+            $(this).addClass("active");
+            $("body").css("background",$(this).attr("data-color"));
+            $(".product-price").css("color",$(this).attr("data-color"));
+            $(".product-button").css("color",$(this).attr("data-color"));
+            $(".product-pic").css("background-image",$(this).attr("data-pic"));
+          });
+        </script>
+      </body>
+    </html>
